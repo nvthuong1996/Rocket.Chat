@@ -42,6 +42,7 @@ import type { CommandsEndpoints } from './v1/commands';
 import type { MeEndpoints } from './v1/me';
 import type { SubscriptionsEndpoints } from './v1/subscriptionsEndpoints';
 import type { ImportEndpoints } from './v1/import';
+import type { CalendarEndpoints } from './v1/calendar';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface, @typescript-eslint/naming-convention
 export interface Endpoints
@@ -86,7 +87,8 @@ export interface Endpoints
 		OAuthAppsEndpoint,
 		SubscriptionsEndpoints,
 		AutoTranslateEndpoints,
-		ImportEndpoints {}
+		ImportEndpoints,
+		CalendarEndpoints {}
 
 type OperationsByPathPatternAndMethod<
 	TEndpoints extends Endpoints,
@@ -240,3 +242,4 @@ export * from './v1/e2e/e2eUpdateGroupKeyParamsPOST';
 export * from './v1/import';
 export * from './v1/voip';
 export * from './v1/email-inbox';
+export * from './v1/calendar';
